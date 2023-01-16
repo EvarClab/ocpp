@@ -1,5 +1,5 @@
-from ocpp.charge_point import ChargePoint as cp
-from ocpp.v16 import call, call_result
+from ocpp.ocpp.charge_point import ChargePoint as cp
+from ocpp.ocpp.v16 import call, call_result
 
 
 class ChargePoint(cp):
