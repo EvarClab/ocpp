@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List, Optional
 
-from ocpp.v16.enums import (
+from ocpp.ocpp.v16.enums import (
     AuthorizationStatus,
     ChargingProfileKindType,
     ChargingProfilePurposeType,
