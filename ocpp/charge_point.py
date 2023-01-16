@@ -12,7 +12,7 @@ from ocpp.ocpp.messages import Call, MessageType, unpack, validate_payload
 from ocpp.ocpp.routing import create_route_map
 
 LOGGER = logging.getLogger("ocpp")
-logging.getLogger('ocpp').setLevel(level=logging.info)
+logging.getLogger('ocpp').setLevel(level=logging.INFO)
 logging.getLogger('ocpp').addHandler(logging.StreamHandler())
 
 
