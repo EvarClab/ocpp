@@ -127,7 +127,7 @@ class ChargePoint:
     async def start(self):
         while True:
             message = await self._connection.recv()
-            LOGGER.info("%s: receive message %s", self.id, message)
+            LOGGER.info("%s: receive message %s", self._connection, message)
 
             await self.route_message(message)
 
