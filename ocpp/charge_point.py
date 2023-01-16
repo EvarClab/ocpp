@@ -126,14 +126,10 @@ class ChargePoint:
 
     async def start(self):
         while True:
-            try:
-                message = await self._connection.recv()
-                LOGGER.info("%s: receive message %s", self.id, message)
+            message = await self._connection.recv()
+            LOGGER.info("%s: receive message %s", self.id, message)
 
-                await self.route_message(message)
-
-            except Exception as e:
-                await asyncio.sleep(0.01)
+            await self.route_message(message)
 
     async def route_message(self, raw_msg):
         """
