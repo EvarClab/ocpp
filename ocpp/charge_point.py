@@ -133,7 +133,7 @@ class ChargePoint:
                 await self.route_message(message)
 
             except Exception as e:
-                continue
+                await asyncio.sleep(0.01)
 
     async def route_message(self, raw_msg):
         """
